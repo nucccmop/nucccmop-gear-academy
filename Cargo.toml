@@ -1,0 +1,18 @@
+[package]
+name = "pebbles-game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gstd = { git = "https://github.com/gear-tech/gear.git", tag = "v1.7.0" }
+parity-scale-codec = { version = "3.7.4", default-features = false, features = ["derive"] }
+scale-info = { version = "2.11.6", default-features = false, features = ["derive"] }
+pebbles-game-io = { path = "io" }
+
+
+[build-dependencies]
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", tag = "v1.7.0" }
+pebbles-game-io = { path="io"}
+
+[dev-dependencies]
+gtest = { git = "https://github.com/gear-tech/gear.git", tag = "v1.7.0" }
